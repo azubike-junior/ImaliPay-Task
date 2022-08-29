@@ -16,8 +16,9 @@ export default function Header() {
           </p>
         </div>
         <div className="mt-2 flex pl-10">
-          <div className="border-r-2 pr-6 flex items-center">
-            <img src={bellIcon} alt="notify" />
+          <div className="border-r-2 pr-6 mt-1 items-center relative">
+            <span className="bg-red-500 absolute px-1.5 left-3 bottom-5 rounded-full text-white">2</span>
+            <img src={bellIcon} className="pt-2" alt="notify" />
           </div>
           <div className="pl-6 flex">
             <img src={avatar} alt="avatar" />
