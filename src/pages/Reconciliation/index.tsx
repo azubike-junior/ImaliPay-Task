@@ -106,7 +106,7 @@ export default function Reconciliation() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 mb-10 z-40">
+      <div className="grid grid-cols-3 mb-10 z-40 gap-6">
         <OverviewBox
           icon={kesIcon}
           info="Total outstanding balance"
