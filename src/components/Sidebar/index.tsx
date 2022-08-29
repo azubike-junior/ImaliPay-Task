@@ -5,6 +5,7 @@ import overviewIcon from "../../assets/overview-icon.svg"
 import customerIcon from "../../assets/customers-icon.svg";
 import defaultIcon from "../../assets/defaults.svg";
 import fulfillmentIcon from "../../assets/fulfillment.svg";
+import {Link} from "react-router-dom"
 
 
 import Menu from "../SidebarMenu";
@@ -13,7 +14,9 @@ export default function Sidebar() {
   return (
     <div className="w-19 bg-white h-screen border-r-2">
       <div className="pl-12 mt-10">
-        <img src={imalipayLogo} className="h-10" alt="logo" />
+        <Link to="/reconciliation">
+          <img src={imalipayLogo} className="h-10" alt="logo" />
+        </Link>
 
         <div>
           <img src={quickMenu} className="h-2.5 mt-14" alt="logo" />
@@ -23,7 +26,11 @@ export default function Sidebar() {
           <Menu link="/overview" icon={overviewIcon} title="Overview" />
           <Menu link="/customer" icon={customerIcon} title="Customers" />
           <Menu link="/defaulters" icon={defaultIcon} title="Defaulters" />
-          <Menu link="/fulfillment" icon={fulfillmentIcon} title="Fulfillment" />
+          <Menu
+            link="/fulfillment"
+            icon={fulfillmentIcon}
+            title="Fulfillment"
+          />
         </div>
       </div>
     </div>
