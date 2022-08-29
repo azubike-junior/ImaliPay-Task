@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap");
+
+.active {
+  /* @apply border-b-2 border-[#000000] no-underline font-bold text-[#000000]; */
+  color: #000000 !important;
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.table {
+  display: block;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4fr);
+}
+.cell {
+  display: inline-block;
+}
+
+.circular-progress {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: conic-gradient(#feaa00 200.6deg, #d9d9d9 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 135px;
+  width: 135px;
+  background: #fff0d1;
+  border-radius: 50%;
+}
+
+.progress-value {
+  position: relative;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
 }
