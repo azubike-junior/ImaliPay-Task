@@ -16,7 +16,7 @@ export default function Defaulters() {
   // ADD FILTER ICON TO THE TOP AND PERCENT ICON TO EACH BOXES
   return (
     <Container title="Defaulters" filter>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 gap-6">
         <OverviewBox
           icon={balanceIcon}
           info="Total outstanding balance"

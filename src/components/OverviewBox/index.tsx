@@ -28,7 +28,7 @@ export default function OverviewBox({
   percentageBox,
 }: BoxProp) {
   return (
-    <div className="border-1 rounded-lg bg-white w-300 px-5 py-4 shadow-md">
+    <div className="border-1 rounded-lg bg-white w-18 px-5 py-4 shadow-md">
       {!percentageBox ? (
         <div>
           <div className="flex justify-between">

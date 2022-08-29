@@ -17,7 +17,7 @@ export default function CustomerBox({
   className,
 }: BoxProp) {
   return (
-    <div className="border-1 rounded-lg bg-white w-300 px-5 py-4 shadow-md">
+    <div className="border-1 rounded-lg bg-white w-18 px-5 py-4 shadow-md">
       <p className=" text-base tracking-wide text-darkerBlue font-inter font-bold pb-4  ">
         {info}
       </p>

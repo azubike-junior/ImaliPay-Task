@@ -12,7 +12,7 @@ import Pagination from './../../components/pagination/index';
 export default function Overview() {
   return (
     <Container title="Overview">
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 gap-6">
         <OverviewBox
           icon={balanceIcon}
           info="Total outstanding balance"

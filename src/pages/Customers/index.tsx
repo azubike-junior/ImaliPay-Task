@@ -14,7 +14,7 @@ import TableBody from "../../components/TableBody";
 export default function Customers() {
   return (
     <Container title="Customers">
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 gap-6">
         <CustomerBox
           info="Total customers"
           total="2,420"
